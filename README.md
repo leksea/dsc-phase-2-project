@@ -65,11 +65,95 @@ In addition, I included the following datasets from Kaggle in `.extraData`:
 * [TMDB Dataset](https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata)
 * [IMDB Movies with Content Ratings](https://www.kaggle.com/datasets/shailx/imdb-movie-rating-dataset)
 
-## Data Cleaning. 
+## Data Manupulation.
 
-## Data Merging.
+We start with extracting zipped data and load all available datasets.
+We then work our way into creating a dataset with movie genres (at least two), movie budgets, movie gross, cast, crew.
+
+*We'll be using same column naming pattern for all datasets. 
+*We'll be splitting genres into two columns for all datasets.
+*We'll be adding cast and crew names, crew names will be split into `Director`, `Producer`, `Screenplay`. 
+*We'll be filtering all datasets after year 2000. 
+
+->For IMDB database, we create a query that joins `movie_basics` with `movie_person`, adding cast and crew to our dataset.
+We then process all movie titles for both IMDB and TheMovieDB (dataset with budgets and profits) into lower-case strings and search for a match using processed movie title and movie year.
+We then add columns indicating if cast or crew member received an award (Golden Globe, Oscar) and plot the data.
+
+->With TMDB dataset, we already have budget and gross, so we add cast and crew columns as well as awards columns.
+
+->For Content Rating Dataset, we split genres into separate columns, scale the budgets, unify column naming.  
+
+As a final step, we merge IMDB dataset with TMDB Dataset. 
+
+## Data  Overview.
+
+![Top-10 most Profitable Genres](results/All-time_Budget_Gross_plot.png)
+ 
+Key Movie Metrics we'll be using for the profit analysis:
+
+    * Budget
+    * Duration
+    * Release Time
+    * Content Rating
+    * Subgenres
+    * Expected Return
+    * Cast
+    * Crew
+    * Cast or Crew with Awards
+        
+![Budgets for Top-10 Genres](results/CLEAN_top10_Budgets_plot.png)
+![Net Profits for Top-10 Genres](results/CLEAN_top10_NetProfits_plot.png)
 
 ## Analysis of Action Genre.
+
+###  High entry-level budget.
+
+![Action Budget](results/Histogram of Action Budget.png)
+
+###  Greater chance of not meeting the ROI >50%. 
+![Action ROI](results/Histogram of Action ROI.png)
+ Greater chance of not meeting the ROI >50%. 
+
+### Expected return coefficient for every dollar invested: 3.6.
+![Action Expected Return](results/Expected_Profits_plot_Action.png)
+
+### Longer movies perform better in box office.
+
+![Action Duration](results/Profits_of_Action_Over_Duration.png)
+
+### Movies released in early summer and after Thanksgiving perform better in box office.
+
+![Action Release Time](results/Release_Month_Action_Over_Time.png)
+
+### Family-friendly movies perform better in box office.
+
+![Action Content Rating](results/Profit_by_Content_Rating_By_Action_plot.png)
+
+### Most profitable subgenres are Adventure, Sci-Fi.
+
+![Action Subjenres](results/Action_Budget_Profit_Genre_Subgenre_plot.png)
+
+### Top 10 cast and crew for Adventure. 
+
+![Action Cast](results/Top 10 Cast_names of Action Plot.png)
+![Action Crew](results/Top 10 Director of Action Plot.png)
+
+
+Our recommendations for movies in Action genre:
+
+|| Key Feature          | Recommended Value       |
+|----------------------|--------------------------|
+| Budget               | $50-100 million          |
+| Content Rating       | PG-13                    |
+| Release Time         | Early Summer, Holiday Season |
+| Duration             | 2-3 hours                |
+| Subgenres            | Adventure, Sci-Fi.       |
+| Expected Return Coefficient | 3.6              |
+| Acclaimed Cast       | No                       |
+| Acclaimed Crew       | Yes                      |
+
+
+
 
 ## Conclusions.
 
