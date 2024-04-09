@@ -99,8 +99,7 @@ Key Movie Metrics we'll be using for the profit analysis:
 ## Analysis of Action Genre.
 
 ###  High entry-level budget.
-
-![Action Budget](results/Histogram of Action Budget.png)
+![Net Profits for Top-10 Genres](results/Histogram of Action Budget.png)
 
 ###  Greater chance of not meeting the ROI >50%. 
 ![Action ROI](results/Histogram of Action ROI.png)
@@ -133,19 +132,16 @@ Key Movie Metrics we'll be using for the profit analysis:
 
 Our recommendations for movies in Action genre:
 
-|| Key Feature          | Recommended Value       |
-|----------------------|--------------------------|
-| Budget               | $50-100 million          |
-| Content Rating       | PG-13                    |
-| Release Time         | Early Summer, Holiday Season |
-| Duration             | 2-3 hours                |
-| Subgenres            | Adventure, Sci-Fi.       |
-| Expected Return Coefficient | 3.6              |
-| Acclaimed Cast       | No                       |
-| Acclaimed Crew       | Yes                      |
-
-
-
+    || Key Feature          | Recommended Value       |
+    |----------------------|--------------------------|
+    | Budget               | $50-100 million          |
+    | Content Rating       | PG-13                    |
+    | Release Time         | Early Summer, Holiday Season |
+    | Duration             | 2-3 hours                |
+    | Subgenres            | Adventure, Sci-Fi.       |
+    | Expected Return Coefficient | 3.6              |
+    | Acclaimed Cast       | No                       |
+    | Acclaimed Crew       | Yes                      |
 
 ## Conclusions.
 
