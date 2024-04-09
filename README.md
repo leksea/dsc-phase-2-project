@@ -106,7 +106,7 @@ As a final step, we merge IMDB dataset with TMDB Dataset.
 ## Analysis of Action Genre.
 
 ###  High entry-level budget.
-![Budgets for Action](Histogram_of_Action_Budget.png)
+![Budgets for Action](results/Histogram_of_Action_Budget.png)
 
 ###  Greater chance of not meeting the ROI >50%. 
 ![Action ROI](results/Histogram_of_Action_ROI.png)
@@ -138,7 +138,7 @@ As a final step, we merge IMDB dataset with TMDB Dataset.
 
 Our recommendations for movies in the Action genre:
 
-    | Key Feature          | Recommended Value       |
+    | **Key Feature**          | **Recommended Value**       |
     |----------------------|--------------------------|
     | Budget               | $50-100 million          |
     | Content Rating       | PG-13                    |
