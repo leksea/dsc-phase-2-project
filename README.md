@@ -30,14 +30,14 @@
 
 # Readme Structure
 
-Goals
-    * Business Problem
-Data
-    * Data Understanding
-    * Data Analysis
-Conclusions
-    * Recommendations
-    * Next Steps
+    Goals
+        * Business Problem
+    Data
+        * Data Understanding
+        * Data Analysis
+    Conclusions
+        * Recommendations
+        * Next Steps
  
 
 ## Business Problem
