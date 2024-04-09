@@ -1,32 +1,24 @@
 
 # Project File Tree
 
-.
-├── AY_Phase2.ipynb                     Notebook.
-├── README.md                           Readme.
-├── extraData                           Additional zipped datasets.
-│   ├── golden_globe_awards.zip
-│   ├── the_oscar_award.csv.zip
-│   ├── tmdb_5000.zip
-│   └── unzipped                        Directory for unzipping.
-│       ├── golden_globe_awards.csv
-│       ├── movie_metadata_with_R.csv
-│       ├── the_oscar_award.csv
-│       ├── tmdb_5000_credits.csv
-│       └── tmdb_5000_movies.csv
-├── movie_data_erd.jpeg                 IMDB ETD diagramm.     
-├── presentation.pptx                   Presentation.
-├── results                             Plots. 
-└── zippedData                          Provided datasets.
-    ├── bom.movie_gross.csv.gz
-    ├── im.db.zip
-    ├── rt.movie_info.tsv.gz
-    ├── rt.reviews.tsv.gz
-    ├── tmdb.movies.csv.gz
-    ├── tn.movie_budgets.csv.gz
-    └── unzipped                       
-        └── im.db                      Directory for unzipping.
-
+    .
+    ├── AY_Phase2.ipynb                     Notebook.
+    ├── README.md                           Readme.
+    ├── extraData                           Additional zipped datasets.
+    │   ├── golden_globe_awards.zip
+    │   ├── the_oscar_award.csv.zip
+    │   ├── movie_metadata_with_R.csv.zip    
+    │   ├── tmdb_5000.zip
+    ├── movie_data_erd.jpeg                 IMDB ETD diagram.     
+    ├── presentation.pdf                    Presentation.
+    ├── results                             Plots. 
+    └── zippedData                          Provided datasets.
+        ├── bom.movie_gross.csv.gz
+        ├── im.db.zip
+        ├── rt.movie_info.tsv.gz
+        ├── rt.reviews.tsv.gz
+        ├── tmdb.movies.csv.gz
+        ├── tn.movie_budgets.csv.gz
 
 # Readme Structure
 
